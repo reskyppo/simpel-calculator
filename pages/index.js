@@ -26,59 +26,124 @@ export default class index extends Component {
 
   render() {
     return (
-      <div className="flex justify-center items-center pt-4 ">
-        <div className="flex-row  border-yellow-900 border p-4">
-          <h1 className="text-black dark:text-white text-4xl">Calculator</h1>
+      <>
+        <head>
+          <title>Calculator</title>
+        </head>
+        <main className="flex justify-center items-center pt-4 ">
+          <div className="flex-row  border-yellow-900 border p-4">
+            <h1 className="text-black dark:text-white text-4xl">Calculator</h1>
 
-          <div className="pt-12">
-            <div className="w-64 h-24 flex items-center justify-end">
-              <p className="text-black dark:text-white text-4xl">
-                {this.state.input}
-              </p>
-            </div>
-            <div className="flex">
-              <Button
-                val="C"
-                className="flex-row"
-                onClick={this.handleDeleteAll}
-              />
-              <Button
-                val="⌫"
-                className="flex-row"
-                onClick={this.handleDelete}
-              />
-            </div>
-            <div className="flex">
-              <Button val="7" className="flex-row" onClick={this.handleValue} />
-              <Button val="8" className="flex-row" onClick={this.handleValue} />
-              <Button val="9" className="flex-row" onClick={this.handleValue} />
-              <Button val="+" className="flex-row" onClick={this.handleValue} />
-            </div>
-            <div className="flex">
-              <Button val="4" className="flex-row" onClick={this.handleValue} />
-              <Button val="5" className="flex-row" onClick={this.handleValue} />
-              <Button val="6" className="flex-row" onClick={this.handleValue} />
-              <Button val="-" className="flex-row" onClick={this.handleValue} />
-            </div>
-            <div className="flex">
-              <Button val="1" className="flex-row" onClick={this.handleValue} />
-              <Button val="2" className="flex-row" onClick={this.handleValue} />
-              <Button val="3" className="flex-row" onClick={this.handleValue} />
-              <Button val="*" className="flex-row" onClick={this.handleValue} />
-            </div>
-            <div className="flex">
-              <Button val="0" className="flex-row" onClick={this.handleValue} />
-              <Button val="." className="flex-row" onClick={this.handleValue} />
-              <Button
-                val="="
-                className="flex-row"
-                onClick={this.handleResult}
-              />
-              <Button val="/" className="flex-row" onClick={this.handleValue} />
+            <div className="pt-12">
+              <div className="w-64 h-24 flex items-center justify-end">
+                <p className="text-black dark:text-white text-4xl">
+                  {this.state.input}
+                </p>
+              </div>
+              <div className="flex">
+                <Button
+                  val="C"
+                  className="flex-row"
+                  onClick={this.handleDeleteAll}
+                />
+                <Button
+                  val="⌫"
+                  className="flex-row"
+                  onClick={this.handleDelete}
+                />
+              </div>
+              <div className="flex">
+                <Button
+                  val="7"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="8"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="9"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="+"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+              </div>
+              <div className="flex">
+                <Button
+                  val="4"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="5"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="6"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="-"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+              </div>
+              <div className="flex">
+                <Button
+                  val="1"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="2"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="3"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="*"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+              </div>
+              <div className="flex">
+                <Button
+                  val="0"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="."
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+                <Button
+                  val="="
+                  className="flex-row"
+                  onClick={this.handleResult}
+                />
+                <Button
+                  val="/"
+                  className="flex-row"
+                  onClick={this.handleValue}
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </main>
+      </>
     );
   }
 }
